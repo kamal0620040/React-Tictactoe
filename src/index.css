@@ -4,3 +4,55 @@
   box-sizing: border-box;
 }
 
+.game-board{
+  height: 275px;
+  width: 240px;
+  background-color: tomato;
+  margin: 200px auto;
+}
+.game-status{
+  font-size: 20px;
+  color: grey;
+  background-color: white;
+  padding: 5px;
+}
+.row{
+  display: flex;
+  gap: 3px;
+}
+
+.row button{
+  border: none;
+  font-size: 60px;
+  border-bottom: 3px solid tomato;
+  transition: all 0.3s ease;
+}
+
+.row button:hover{
+  background-color: rgb(211, 211, 211);
+}
+
+.row:last-of-type button{
+  border: none;
+}
+
+.square{
+  height: 80px;
+  width: 80px;
+}
+
+.restart{
+  margin-top: 20px;
+  padding: 8px;
+  background-color: gold;
+  border: none;
+  border-radius: 5px;
+  font: bold;
+  transition: all 0.3s ease;
+}
+
+.restart:hover{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
