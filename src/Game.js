@@ -37,7 +37,7 @@ function calculateStatus(winner, squares, nextValue) {
   if (squares.every(Boolean)) {
     return "Draw";
   } else {
-    return `Next player:${nextValue}`;
+    return `Next player: ${nextValue}`;
   }
 }
 
@@ -91,7 +91,7 @@ function Game() {
           onClick={() => setCurrentStep(step)}
           disabled={isCurrentStep}
         >
-          {desc} {isCurrentStep ? "(current)" : null}
+          {desc} {isCurrentStep ? "[current]" : null}
         </button>
       </li>
     );
